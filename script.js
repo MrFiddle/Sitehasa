@@ -22,7 +22,7 @@ function startup() {
 }
  
 function toggleMineHero() {
-    hero.style.backgroundImage = "url('minesHero')";
+    hero.style.backgroundImage = "url('./assets/images/mines_hero.webp')";
 
     minesHero.style.display = 'flex';
     urbanHero.style.display = 'none';
