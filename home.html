@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+         rel='stylesheet'
+         href='./mobile.css'/>
+    <link
+         rel='stylesheet'
+         href='./tablet.css'
+         media='screen and (min-width: 600px)'/>
+    
+    <link
+         rel='stylesheet'
+         href='./desktop.css'
+         media='screen and (min-width: 800px)'/>
+         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="./assets/images/mines_hero.webp" as="minesHero">
+
+    <script src="https://kit.fontawesome.com/8fbf13a6b9.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <div class="navLogo"></div>
+            <div class="navDotMenu">
+                <span style="font-size: 3rem; color: var(--yellowMine);">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </div>
+        </nav>
+
+        <div class="hero__container mines fade">
+            <div class="hero__img">
+                <img src="./assets/icons/mineria.png" alt="">
+            </div>
+            <div class="hero__text text__mines">
+                <h1>Minería</h1>
+                <p>Soluciones tecnológicas, seguras y eficientes en conducciones de fluidos a presión con o sin partículas en suspensión.
+                </p>
+            </div>
+
+            <div class="hero__button button__mines">
+                <p>Explora nuestras <br> soluciones y mercados</p>
+            </div>
+
+        </div>
+
+        <!-- urban -->
+
+        <div class="hero__container urban fade" id="inactive">
+            <div class="hero__img">
+                <img src="./assets/icons/urba.png" alt="">
+            </div>
+            <div class="hero__text text__urban">
+                <h1>Urbanización</h1>
+                <p>Suministramos materiales y servicios de infraestructura hidráulica para proyectos de construcción.
+                </p>
+            </div>
+
+            <div class="hero__button button__urban">
+                <p>Explora nuestras <br> soluciones y mercados</p>
+            </div>
+
+        </div>
+
+        <!-- water -->
+
+        <div class="hero__container water fade" id="inactive">
+            <div class="hero__img">
+                <img src="./assets/icons/aguas.png" alt="">
+            </div>
+            <div class="hero__text text__water">
+                <h1>Aguas municipales</h1>
+                <p>Ofrecemos soluciones globales en ingeniería para sistemas de agua y saneamiento municipal con tecnología avanzada.
+                </p>
+            </div>
+
+            <div class="hero__button button__water">
+                <p>Explora nuestras <br> soluciones y mercados</p>
+            </div>
+
+        </div>
+
+        <!-- crops -->
+
+        <div class="hero__container crop fade" id="inactive">
+            <div class="hero__img">
+                <img src="./assets/icons/agri.png" alt="">
+            </div>
+            <div class="hero__text text__crop">
+                <h1>Agricultura</h1>
+                <p>Proveedores de sistemas de riego presurizado en sus diferentes modalidades. Distribudores Rivulis Platinum Elite
+                </p>
+            </div>
+
+            <div class="hero__button button__crop">
+                <p>Explora nuestras <br> soluciones y mercados</p>
+            </div>
+
+        </div>
+
+        <div class="dot__row">
+            <span class="dot dot__mine dot__active"></span>
+            <span class="dot dot__urban"></span>
+            <span class="dot dot__water"></span>
+            <span class="dot dot__crop"></span>
+        </div>
+
+    </div>
+
+    <section class="aboutUs">
+        <div class="aboutUs__mainImage">
+            <img src="./assets/icons/people-group-solid 1.png" alt="">
+            <h1>¿Quienes somos?</h1>
+        </div>
+        <div class="aboutUs__text">
+            <h1>Pioneros en el sur de Sinaloa en soluciones hidráulicas</h1>
+            <p>Somos una empresa mexicana que brinda soluciones integrales en la conducción de agua y fluidos industriales de los productos que nuestros socios comerciales líderes en el Mercado de Tecnología ofrecen para las diversas aplicaciones.</p>
+        </div>
+
+        <div class="aboutUs__button">
+            <p>Conoce más sobre nosotros</p>
+        </div>
+<!-- 
+        <section class="aboutUs__slider">
+           
+            <article class="slider__card">
+                <img src="./assets/images/aboutUs/ros.jpg" alt="">
+            </article>
+
+            <article class="slider__card">
+                <img src="./assets/images/aboutUs/ros.jpg" alt="">
+            </article>
+
+            <article class="slider__card">
+                <img src="./assets/images/aboutUs/ros.jpg" alt="">
+            </article>
+
+        </section> -->
+
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>

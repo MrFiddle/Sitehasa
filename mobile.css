@@ -1,0 +1,316 @@
+:root {
+    --primary-color: #373981;
+    --secondary-color: #0CA89E;
+    --tertiary-color: #085C57;
+
+    --yellowMine: #FBFFD0;
+    --orangeUrban: #FFC9B0;
+    --blueWater: #B0E0FF;
+    --greenCrop: #B0FFC9;
+    --justWhite: #FFFFFF;
+}
+
+* {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+}
+    
+html {
+    font-size: 62.5%;
+}
+
+#inactive {
+    display: none;
+}
+
+.inactive { display: none; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    width: 100vw;
+    display: flex;
+    position: -webkit-sticky;
+    position: fixed;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,0.0);
+}
+
+/* logo and shit */
+
+.navLogo {
+    display: flex;
+    width: 50%;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    background-image: url(./assets/images/mines_hero.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.hero__container {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__img img {
+    width: 84px;
+    height: auto;
+}
+
+.navDotMenu {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.hero__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+    width: 241px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid;
+}
+
+/*  slideshow styles */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot__active {
+    height: 25px;
+    width: 25px;
+}
+
+.dot__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* styles for mines hero */
+
+.mines {display: flex;}
+
+.text__mines h1 {
+    font-size: 4rem;
+    color: var(--yellowMine);
+    font-variant: small-caps;
+}
+
+.text__mines p {
+    font-size: 1.6rem;
+    color: var(--justWhite);
+    padding: 32px 80px;
+}
+
+.button__mines {
+    color: var(--yellowMine);
+    border-color: var(--yellowMine);
+}
+
+.dot__mine {
+    background-color: var(--yellowMine);
+}
+
+/* styles for urban hero */
+
+.urban {display: flex;}
+
+.text__urban h1 {
+    font-size: 4rem;
+    color: var(--orangeUrban);
+    font-variant: small-caps;
+}
+
+.text__urban p {
+    font-size: 1.6rem;
+    color: var(--justWhite);
+    padding: 32px 80px;
+}
+
+.button__urban {
+    color: var(--orangeUrban);
+    border-color: var(--orangeUrban);
+}
+
+.dot__urban { 
+    background-color: var(--orangeUrban)
+}
+
+/* styles for aguas hero */
+
+.water {display: flex;}
+
+.text__water h1 {
+    font-size: 4rem;
+    color: var(--blueWater);
+    font-variant: small-caps;
+}
+
+.text__water p {
+    font-size: 1.6rem;
+    color: var(--justWhite);
+    padding: 32px 80px;
+}
+
+.button__water {
+    color: var(--blueWater);
+    border-color: var(--blueWater);
+}
+
+.dot__water {
+    background-color: var(--blueWater);
+}
+
+/* styles for crop hero */
+
+.crop {display: flex;}
+
+.text__crop h1 {
+    font-size: 4rem;
+    color: var(--greenCrop);
+    font-variant: small-caps;
+}
+
+.text__crop p {
+    font-size: 1.6rem;
+    color: var(--justWhite);
+    padding: 32px 80px;
+}
+
+.button__crop {
+    color: var(--greenCrop);
+    border-color: var(--greenCrop);
+}
+
+.dot__crop {
+    background-color: var(--greenCrop);
+}
+
+/* about us */
+.aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutUs__mainImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 58px;
+}
+
+.aboutUs__mainImage img {
+    width: 90px;
+    height: auto;
+}
+
+.aboutUs__mainImage h1 {
+    font-variant: small-caps;
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: var(--tertiary-color);
+}
+
+.aboutUs__text {
+    padding: 21px 41px;
+}
+
+.aboutUs__text h1 {
+    font-size: 2.4rem;
+    font-variant: small-caps;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 21px;
+}
+
+.aboutUs__text p {
+    font-size: 1.6rem;
+    text-align: justify;
+}
+
+.aboutUs__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--justWhite); 
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    width: 250px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.aboutUs__slider {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.slider__card {
+    position: relative;
+    scroll-snap-align: center;
+
+    width: 65%;
+    min-width: 230px;
+    max-width: 300px;
+
+
+    margin: 50px auto 0;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 0 15px;
+    border-radius: 15px;
+}
