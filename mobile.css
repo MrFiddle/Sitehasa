@@ -293,10 +293,17 @@ nav {
 
 .aboutUs__slider {
     display: flex;
-    flex-direction: row;
     overflow: scroll;
     overscroll-behavior-x: contain;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x mandatory;
+
+    max-width: 100%;
+}
+
+.slider__card {
+    margin: 0 50%;
+    position: relative;
+    scroll-snap-align: center;
 }
 
 .slider__card img {
