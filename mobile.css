@@ -106,7 +106,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.6rem;
+    font-size: var(--font-content-size);
     text-align: center;
     font-weight: bold;
     width: 241px;
@@ -140,9 +140,9 @@ nav {
 
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 1s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 1s;
 }
 
 @keyframes fade {
@@ -155,13 +155,13 @@ nav {
 .mines {display: flex;}
 
 .text__mines h1 {
-    font-size: 4rem;
+    font-size: var(--font-title-size);
     color: var(--yellowMine);
     font-variant: small-caps;
 }
 
 .text__mines p {
-    font-size: 1.6rem;
+    font-size: var(--font-content-size);
     color: var(--justWhite);
     padding: 32px 80px;
 }
@@ -180,13 +180,13 @@ nav {
 .urban {display: flex;}
 
 .text__urban h1 {
-    font-size: 4rem;
+    font-size: var(--font-title-size);
     color: var(--orangeUrban);
     font-variant: small-caps;
 }
 
 .text__urban p {
-    font-size: 1.6rem;
+    font-size: var(--font-content-size);
     color: var(--justWhite);
     padding: 32px 80px;
 }
@@ -205,13 +205,13 @@ nav {
 .water {display: flex;}
 
 .text__water h1 {
-    font-size: 4rem;
+    font-size: var(--font-title-size);
     color: var(--blueWater);
     font-variant: small-caps;
 }
 
 .text__water p {
-    font-size: 1.6rem;
+    font-size: var(--font-content-size);
     color: var(--justWhite);
     padding: 32px 80px;
 }
@@ -230,13 +230,13 @@ nav {
 .crop {display: flex;}
 
 .text__crop h1 {
-    font-size: 4rem;
+    font-size: var(--font-title-size);
     color: var(--greenCrop);
     font-variant: small-caps;
 }
 
 .text__crop p {
-    font-size: 1.6rem;
+    font-size: var(--font-content-size);
     color: var(--justWhite);
     padding: 32px 80px;
 }
@@ -299,7 +299,7 @@ nav {
     align-items: center;
 
     color: var(--justWhite); 
-    font-size: 1.4rem;
+    font-size: var(--font-content-size);
     font-weight: bold;
 
     width: 250px;
@@ -467,14 +467,14 @@ nav {
 }
 
 .locations__text p {
-    font-size: 2rem;
+    font-size: var(--font-size-l);
     text-align: center;
     font-weight: bold;
     margin-top: 18px;
 }
 
 .locations__text #link {
-    font-size: 1.4rem;
+    font-size: var(--font-size-xs);
     text-align: center;
     color: var(--tertiary-color);
 }
@@ -785,3 +785,7 @@ nav {
 }
 
 /* footer */
+
+footer {
+    background-color: #101338;
+}
