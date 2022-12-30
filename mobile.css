@@ -502,6 +502,20 @@ nav {
     font-weight: bold;
 }
 
+.locations__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+.locations__contact a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
 /* blog */
 
 .blog {
