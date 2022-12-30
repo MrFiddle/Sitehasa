@@ -10,6 +10,22 @@ const urbanDot = document.querySelector('.dot__urban');
 const waterDot = document.querySelector('.dot__water');
 const cropDot = document.querySelector('.dot__crop');
 
+const nav = document.querySelector('nav');
+const navIcon = document.querySelector('.navDotMenu')
+
+heroHeight = hero.clientHeight;
+navHeight = nav.clientHeight;
+
+window.onscroll = () => {
+    if (window.scrollY > heroHeight - (navHeight - 10)) {
+        nav.classList.add('nav__scrolled');
+        navIcon.classList.add('nav__scrolledIcon');
+    } else {
+        nav.classList.remove('nav__scrolled');
+        navIcon.classList.remove('nav__scrolledIcon');
+    }
+}
+
 mineDot.addEventListener('click', toggleMineHero);
 urbanDot.addEventListener('click', toggleUrbanHero);
 waterDot.addEventListener('click', toggleWaterHero);
