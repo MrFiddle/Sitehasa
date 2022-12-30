@@ -13,6 +13,11 @@ const cropDot = document.querySelector('.dot__crop');
 const nav = document.querySelector('nav');
 const navIcon = document.querySelector('.navDotMenu')
 
+var minesImg = new Image('./assets/images/mines_hero.webp');
+var urbanImg = new Image('./assets/images/urban_hero.webp');
+var waterImg = new Image('./assets/images/water_hero.webp');
+var cropImg = new Image('./assets/images/crop_hero.webp');
+
 heroHeight = hero.clientHeight;
 navHeight = nav.clientHeight;
 
@@ -38,7 +43,7 @@ function startup() {
 }
  
 function toggleMineHero() {
-    hero.style.backgroundImage = "url('./assets/images/mines_hero.webp')";
+    hero.style.backgroundImage = minesImg;
 
     minesHero.style.display = 'flex';
     urbanHero.style.display = 'none';
@@ -53,7 +58,7 @@ function toggleMineHero() {
 }
 
 function toggleUrbanHero() {
-    hero.style.backgroundImage = "url('./assets/images/urban_hero.webp')";
+    hero.style.backgroundImage = urbanImg
 
     minesHero.style.display = 'none';
     urbanHero.style.display = 'flex';
@@ -67,7 +72,7 @@ function toggleUrbanHero() {
 }
 
 function toggleWaterHero() {
-    hero.style.backgroundImage = "url('./assets/images/water_hero.webp')";
+    hero.style.backgroundImage = waterImg;
 
     minesHero.style.display = 'none';
     urbanHero.style.display = 'none';
@@ -82,7 +87,7 @@ function toggleWaterHero() {
 }
 
 function toggleCropHero() {
-    hero.style.backgroundImage = "url('./assets/images/crop_hero.webp')";
+    hero.style.backgroundImage = cropImg;
 
     minesHero.style.display = 'none';
     urbanHero.style.display = 'none';

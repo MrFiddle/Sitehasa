@@ -36,6 +36,7 @@
     
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 #inactive {
@@ -84,6 +85,32 @@ nav {
     color: white;
 }
 
+.hero a {
+    position: absolute;
+    left: calc(50% - 120px);
+    top: 92vh;
+    display: block;
+
+    padding: 15px;
+
+    width: 229px;
+    height: 48px;
+    background-color: var(--justWhite);
+
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 15px;
+
+    font-size: var(--font-content-size);
+    font-weight: bold;
+    text-align: center;
+
+    text-decoration: none;
+
+    color: black;
+
+}
+
 .hero__container {
     height: inherit;
     display: flex;
@@ -103,7 +130,7 @@ nav {
     align-items: center;
     width: 50%;
     padding-top: 10px;
-    padding-right: 10px;
+    padding-right: 20px;
     padding-bottom: 10px;
     color: white;
 }
