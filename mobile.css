@@ -475,7 +475,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #F1F2FF;
+    background-color: var(--justWhite);
 }
 
 .locations__mainImage {
@@ -614,7 +614,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--justWhite);
+    background-color: #F1F2FF;
 }
 
 .proveedores__mainImage {
