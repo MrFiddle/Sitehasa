@@ -12,6 +12,7 @@ const cropDot = document.querySelector('.dot__crop');
 
 const nav = document.querySelector('nav');
 const navIcon = document.querySelector('.navDotMenu')
+const mobileMenu = document.querySelector('.mobile__menu');
 
 var minesImg = new Image();
 minesImg.src = './assets/images/mines_hero.webp';
@@ -49,6 +50,7 @@ mineDot.addEventListener('click', toggleMineHero);
 urbanDot.addEventListener('click', toggleUrbanHero);
 waterDot.addEventListener('click', toggleWaterHero);
 cropDot.addEventListener('click', toggleCropHero);
+navIcon.addEventListener('click', toggleNav);
 
 startup();
 
@@ -115,4 +117,12 @@ function toggleCropHero() {
     waterDot.classList.remove('dot__active');
     cropDot.classList.add('dot__active');
 
+}
+
+function toggleNav() {
+    if (mobileMenu.style.display == 'flex') {
+        mobileMenu.style.display = 'none';
+    } else {
+        mobileMenu.style.display = 'flex';
+    }
 }
