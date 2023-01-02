@@ -13,21 +13,35 @@ const cropDot = document.querySelector('.dot__crop');
 const nav = document.querySelector('nav');
 const navIcon = document.querySelector('.navDotMenu')
 
-var minesImg = new Image('./assets/images/mines_hero.webp');
-var urbanImg = new Image('./assets/images/urban_hero.webp');
-var waterImg = new Image('./assets/images/water_hero.webp');
-var cropImg = new Image('./assets/images/crop_hero.webp');
+var minesImg = new Image();
+minesImg.src = './assets/images/mines_hero.webp';
+var urbanImg = new Image();
+urbanImg.src = './assets/images/urban_hero.webp';
+var waterImg = new Image();
+waterImg.src = './assets/images/water_hero.webp';
+var cropImg = new Image();
+cropImg.src = './assets/images/crop_hero.webp';
 
 heroHeight = hero.clientHeight;
 navHeight = nav.clientHeight;
 
 window.onscroll = () => {
-    if (window.scrollY > heroHeight - (navHeight - 10)) {
+    if (window.scrollY > heroHeight - (navHeight)) {
         nav.classList.add('nav__scrolled');
         navIcon.classList.add('nav__scrolledIcon');
+
+        document.querySelectorAll('.menu__item a').forEach(a => {
+            a.style.color = '#373981';
+        })
+
     } else {
         nav.classList.remove('nav__scrolled');
         navIcon.classList.remove('nav__scrolledIcon');
+
+        document.querySelectorAll('.menu__item a').forEach(a => {
+            a.style.color = '#ffffff';
+        })
+
     }
 }
 
@@ -41,9 +55,10 @@ startup();
 function startup() {
     minesHero.style.display = 'flex';
 }
- 
+
 function toggleMineHero() {
-    hero.style.backgroundImage = minesImg;
+    console.log("a")
+    hero.style.backgroundImage = 'url(./assets/images/mines_hero.webp)';
 
     minesHero.style.display = 'flex';
     urbanHero.style.display = 'none';
@@ -58,7 +73,8 @@ function toggleMineHero() {
 }
 
 function toggleUrbanHero() {
-    hero.style.backgroundImage = urbanImg
+    hero.style.backgroundImage = 'url(./assets/images/urban_hero.webp)'
+    console.log(hero.style.backgroundImage)
 
     minesHero.style.display = 'none';
     urbanHero.style.display = 'flex';
@@ -72,7 +88,7 @@ function toggleUrbanHero() {
 }
 
 function toggleWaterHero() {
-    hero.style.backgroundImage = waterImg;
+    hero.style.backgroundImage = 'url(./assets/images/water_hero.webp)';
 
     minesHero.style.display = 'none';
     urbanHero.style.display = 'none';
@@ -87,7 +103,7 @@ function toggleWaterHero() {
 }
 
 function toggleCropHero() {
-    hero.style.backgroundImage = cropImg;
+    hero.style.backgroundImage = 'url(./assets/images/crop_hero.webp)';
 
     minesHero.style.display = 'none';
     urbanHero.style.display = 'none';

@@ -40,11 +40,69 @@
 <body>
     <div class="hero">
         <nav>
-            <div class="navLogo"></div>
-            <div class="navDotMenu">
-                <span style="font-size: 3rem;">
-                    <i class="fa-solid fa-bars"></i>
-                </span>
+            <div class="nav__mobile">
+                <div class="navLogo"></div>
+                <div class="navDotMenu">
+                    <span style="font-size: 3rem;">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="mobile__menu slide-down" id="">
+                <div class="menu__item">
+                    <div class="menu__item-icon">
+                        <span style="color:var(--secondary-color); font-size: 30px;">
+                            <i class="fa-solid fa-people-group"></i>
+                        </span>
+                    </div>
+                    <a href="#"><p>¿Quienes somos?</p></a>
+                </div>
+
+                <div class="menu__item">
+                    <div class="menu__item-icon">
+                        <span style="color:var(--secondary-color); font-size: 30px;">
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    <a href="#"><p>Mejores trabajos</p></a>
+                </div>
+
+                <div class="menu__item">
+                    <div class="menu__item-icon">
+                        <span style="color:var(--secondary-color); font-size: 30px;">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                    </div>
+                    <a href="#"><p>Contacto / Sucursales</p></a>
+                </div>
+
+                <div class="menu__item">
+                    <div class="menu__item-icon">
+                        <span style="color:var(--secondary-color); font-size: 30px;">
+                            <i class="fa-solid fa-shop"></i>
+                        </span>
+                    </div>
+                    <a href="#"><p>Productos</p></a>
+                </div>
+
+                <div class="menu__item">
+                    <div class="menu__item-icon">
+                        <span style="color:var(--secondary-color); font-size: 30px;">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </span>
+                    </div>
+                    <a href="#"><p>Blog de noticias</p></a>
+                </div>
+                
+                <div class="menu__item" id="edge">
+                    <div class="menu__item-icon">
+                        <span style="color:var(--secondary-color); font-size: 30px;">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </span>
+                    </div>
+                    <a id="edge_a" href="#locations"><p>Catálogos y fichas técnicas</p></a>
+                </div>
+
             </div>
         </nav>
 
@@ -125,7 +183,7 @@
             <span class="dot dot__crop"></span>
         </div>
 
-        <a href="#locations">Contáctanos</a>
+        <a class="hero__button_contact" href="#locations">Contáctanos</a>
 
     </div>
 
@@ -385,7 +443,6 @@
     </section>
 
     <footer>
-
     </footer>
 
     <script src="./script.js"></script>

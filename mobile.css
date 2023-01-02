@@ -52,11 +52,64 @@ body {
 nav {
     width: 100vw;
     display: flex;
+    flex-direction: column;
     position: -webkit-sticky;
     position: fixed;
     justify-content: space-between;
-    background-color: rgba(255,255,255,0.0);
+    background-color: rgb(34, 33, 33);
     z-index: 100;
+}
+
+.nav__mobile {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.menu__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__item a {
+    font-size: var(--font-size-l);
+    color: var(--justWhite);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 0;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.menu__item-font {
+    color: var(--justWhite);
+}
+
+.menu__item-fontScrolled {
+    color: var(--primary-color);
+}
+
+.menu__item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    min-width: 58px;
+}
+
+/* slide down animation for menu */
+
+
+
+#edge {
+    padding-bottom: 57px;
 }
 
 .nav__scrolled {
@@ -65,6 +118,10 @@ nav {
 
 .nav__scrolledIcon span {
     color: black;
+}
+
+.mobile__scrolled {
+    color: #171717;
 }
 
 /* logo and shit */
@@ -85,7 +142,7 @@ nav {
     color: white;
 }
 
-.hero a {
+.hero__button_contact {
     position: absolute;
     left: calc(50% - 120px);
     top: 92vh;
