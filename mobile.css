@@ -62,6 +62,10 @@ nav {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
+.nav__desktop {
+    display: none;
+}
+
 .nav__mobile {
     display: flex;
     justify-content: space-between;
@@ -174,9 +178,39 @@ nav {
     align-items: center;
 }
 
+.hero__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
 .hero__img img {
     width: 84px;
     height: auto;
+}
+
+.hero__img h1 {
+    font-size: var(--font-title-size);
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero__mines {
+    color: var(--yellowMine);
+}
+
+.hero__urban {
+    color: var(--orangeUrban);
+}
+
+.hero__water {
+    color: var(--blueWater);
+}
+
+.hero__crop {
+    color: var(--greenCrop);
 }
 
 .navDotMenu {
@@ -195,7 +229,6 @@ nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 10px;
 }
 
 .hero__button {

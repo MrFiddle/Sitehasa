@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+         rel='stylesheet'
+         href='./mobile.css'/>
+    <link
+         rel='stylesheet'
+         href='./tablet.css'
+         media='screen and (min-width: 600px)'/>
+    
+    <link
+         rel='stylesheet'
+         href='./desktop.css'
+         media='screen and (min-width: 800px)'/>
+         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="./assets/images/mines_hero.webp" as="minesHero">
+
+    <script src="https://kit.fontawesome.com/8fbf13a6b9.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+
+</head>
+<style>
+    :root {
+    --primary-color: #373981;
+    --secondary-color: #0CA89E;
+    --tertiary-color: #085C57;
+
+    --yellowMine: #FBFFD0;
+    --orangeUrban: #FFC9B0;
+    --blueWater: #B0E0FF;
+    --greenCrop: #B0FFC9;
+    --justWhite: #FFFFFF;
+    --deep-dark: #171717;
+}
+</style>
+
+<body>
+    <nav>
+        <div class="nav__mobile">
+            <div class="navLogo"><a href="../home.html">home</a></div>
+            <div class="navDotMenu">
+                <span style="font-size: 3rem;">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </div>
+        </div>
+        <div class="mobile__menu slide-down" id="inactive">
+            <div class="menu__item">
+                <div class="menu__item-icon">
+                    <span style="color:var(--secondary-color); font-size: 30px;">
+                        <i class="fa-solid fa-people-group"></i>
+                    </span>
+                </div>
+                <a href="./aboutUs/aboutUs.html"><p>¿Quienes somos?</p></a>
+            </div>
+
+            <div class="menu__item">
+                <div class="menu__item-icon">
+                    <span style="color:var(--secondary-color); font-size: 30px;">
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </div>
+                <a href="#"><p>Mejores trabajos</p></a>
+            </div>
+
+            <div class="menu__item">
+                <div class="menu__item-icon">
+                    <span style="color:var(--secondary-color); font-size: 30px;">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                </div>
+                <a href="#"><p>Contacto / Sucursales</p></a>
+            </div>
+
+            <div class="menu__item">
+                <div class="menu__item-icon">
+                    <span style="color:var(--secondary-color); font-size: 30px;">
+                        <i class="fa-solid fa-shop"></i>
+                    </span>
+                </div>
+                <a href="#"><p>Productos</p></a>
+            </div>
+
+            <div class="menu__item">
+                <div class="menu__item-icon">
+                    <span style="color:var(--secondary-color); font-size: 30px;">
+                        <i class="fa-solid fa-bullhorn"></i>
+                    </span>
+                </div>
+                <a href="#"><p>Blog de noticias</p></a>
+            </div>
+            
+            <div class="menu__item" id="edge">
+                <div class="menu__item-icon">
+                    <span style="color:var(--secondary-color); font-size: 30px;">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </span>
+                </div>
+                <a id="edge_a" href="#locations"><p>Catálogos y fichas técnicas</p></a>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+
+
+        <div class="main__fSlide">
+            <h1 id="number__fSlide" style="font-size: 10rem;"></h1>
+            <h1>años de experiencia</h1>
+        </div>
+    
+        <div class="main__sSlide">
+            <h1 style="font-size: 10rem;">+20</h1>
+            <h1>Alianzas comerciales con marcas a tu servicio</h1>
+        </div>
+
+        <section class="main__content">
+            <div class="main-content__title">
+                <h1>Modernizando México desde 1994</h1>
+                <iframe class="content__video" width="560" height="315" src="https://www.youtube.com/embed/KQrFyKwmag4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="main-content__main-text">
+                <p>Sitehasa es una empresa establecida en 1994 que se dedica a la ingeniería de soluciones para la agricultura, el agua municipal y la minería. Fuimos pioneros en la introducción de sistemas de riego por goteo en hortalizas y frutales en el sur de Sinaloa y, posteriormente, ampliamos nuestra oferta a la automatización y control de fugas en sistemas de agua municipal. Nuestra misión es contribuir a la conservación del agua y a la optimización de su uso mediante el empleo de tecnología de alto rendimiento, con el objetivo de ayudar a nuestros clientes a obtener una mayor eficiencia, ahorro de agua y energía y, en consecuencia, aumentar su productividad. Hemos establecido alianzas con líderes del mercado del agua y la minería y hemos logrado establecernos como líderes en nuestra región gracias a nuestro trabajo eficiente, nuestro personal altamente capacitado y nuestros productos de alta calidad. Ofrecemos soluciones integrales y mantenemos un proceso de mejora continua con el fin de proporcionar una plena satisfacción a nuestros clientes y garantizar un crecimiento sostenido de nuestra empresa.</p>
+            </div>
+            <div class="image">
+                <img src="http://sitehasa.solemti.net/files/Nosotros/1/FotoSeccion1/img_3257-743.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="secondary__content">
+            <div class="secondary-content__title">
+                <span style="color: var(--secondary-color); font-size: 76px;">
+                    <i class="fa-solid fa-medal"></i>
+                </span>
+                <h1>Alianzas con nuestros socios comerciales quienes son líderes en el mercado</h1>
+            </div>
+            <div class="secondary-content__main-text">
+                <p>Nuestros socios comerciales son líderes en el mercado del agua, el campo agrícola y la minería, lo que nos fortalece y nos permite ser líderes en nuestra región. Esto se debe a nuestro trabajo eficiente, con procesos estandarizados y personal altamente capacitado y comprometido con nuestros clientes. Ofrecemos productos certificados de alta calidad y brindamos soluciones integrales mediante un proceso de mejora continua. Esto nos ha permitido proporcionar satisfacción total a nuestros clientes y lograr un crecimiento constante de nuestra empresa.</p>
+            </div>
+            <div class="image">
+                <img src="http://sitehasa.solemti.net/files/Nosotros/1/FotoSeccion2/alianzas-comerciales-708.png" alt="">
+            </div>
+        </section>
+
+        <section class="tertiary__content">
+            <div class="tertiary-content__title">
+                <span style="color: var(--secondary-color); font-size: 76px;">
+                    <i class="fa-solid fa-microchip"></i>
+                </span>
+                <h1>Instalaciones modernas y funcionales</h1>
+            </div>
+            <div class="tertiary-content__main-text">
+                <p>Las instalaciones de Sitehasa le brindan lo que usted necesita: materiales a su alcance, servicio, comfort mientras es atendido, sala de negocios, sala de capacitación y laboratorio de pruebas para nuestros diferentes equipos de agricultura, minería y aguas municipales.</p>
+            </div>
+            <div class="image">
+                <img src="http://sitehasa.solemti.net/files/Nosotros/1/FotoSeccion3/img_3323-736.jpg" alt="">
+            </div>
+        </section>
+
+        <div class="separator">
+            <div class="separator__line"></div>
+        </div>
+
+        <section class="content__image-slider">
+            <article class="image-slider__item">
+                <img src="http://sitehasa.solemti.net/files/Nosotros/1/FotoSeccion1/img_3257-743.jpg" alt="">
+            </article>
+            <article class="image-slider__item">
+                <img src="http://sitehasa.solemti.net/files/Nosotros/1/FotoSeccion1/img_3257-743.jpg" alt="">
+            </article>
+            <article class="image-slider__item">
+                <img src="http://sitehasa.solemti.net/files/Nosotros/1/FotoSeccion1/img_3257-743.jpg" alt="">
+            </article>
+        </section>
+            
+    </main>
+
+    <script src="./script.js"></script>
+</body>
