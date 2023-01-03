@@ -58,6 +58,7 @@ nav {
     justify-content: space-between;
     background-color: rgb(34, 33, 33);
     z-index: 100;
+    top: 0;
 
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
@@ -130,18 +131,63 @@ nav {
 
 .navLogo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 50%;
+    padding-left: 20px;
 }
+
+.navLogo span {
+    color: var(--justWhite);
+    font-size: 30px;
+}
+
+.navScrolledLogo {
+    color: black;
+}
+
+/* hero stuff */
 
 .hero {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
     height: 95vh;
-    background-image: url(./assets/images/mines_hero.jpg);
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(https://www.regiopoliductos.com/wp-content/uploads/2019/09/back6.jpg);
     background-size: cover;
-    color: white;
+}
+
+.hero__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__title span {
+    font-size: 8rem;
+}
+
+.hero__title h1 {
+    font-size: 4rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero__content {
+    color: var(--justWhite);
+    padding: 32px 70px;
+    font-size: var(--font-content-size);
+    text-align: center;
 }
 
 .hero__button_contact {
@@ -170,67 +216,6 @@ nav {
 
 }
 
-.hero__container {
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero__img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-}
-
-.hero__img img {
-    width: 84px;
-    height: auto;
-}
-
-.hero__img h1 {
-    font-size: var(--font-title-size);
-    font-weight: bold;
-    text-align: center;
-}
-
-.hero__mines {
-    color: var(--yellowMine);
-}
-
-.hero__urban {
-    color: var(--orangeUrban);
-}
-
-.hero__water {
-    color: var(--blueWater);
-}
-
-.hero__crop {
-    color: var(--greenCrop);
-}
-
-.navDotMenu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 50%;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    color: white;
-}
-
-.hero__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
 .hero__button {
     display: flex;
     justify-content: center;
@@ -242,6 +227,56 @@ nav {
     height: 50px;
     border-radius: 15px;
     border: 2px solid;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mines {
+    color: var(--yellowMine);
+}
+
+.dot__mine {
+    background-color: var(--yellowMine);
+}
+
+.urban {
+    color: var(--orangeUrban);
+}
+
+.dot__urban {
+    background-color: var(--orangeUrban);
+}
+
+.water {
+    color: var(--blueWater);
+}
+
+.dot__water {
+    background-color: var(--blueWater);
+}
+
+.crop {
+    color: var(--greenCrop);
+}
+
+.dot__crop {
+    background-color: var(--greenCrop);
+}
+
+.navDotMenu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    color: white;
 }
 
 /*  slideshow styles */
@@ -261,10 +296,14 @@ nav {
 }
 
 .dot__row {
+    padding-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 120px;
+
+    position: absolute;
+    top: 70vh;
 }
 
 .fade {
@@ -277,106 +316,6 @@ nav {
 @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
-}
-
-/* styles for mines hero */
-
-.mines {display: flex;}
-
-.text__mines h1 {
-    font-size: var(--font-title-size);
-    color: var(--yellowMine);
-    font-variant: small-caps;
-}
-
-.text__mines p {
-    font-size: var(--font-content-size);
-    color: var(--justWhite);
-    padding: 32px 80px;
-}
-
-.button__mines {
-    color: var(--yellowMine);
-    border-color: var(--yellowMine);
-}
-
-.dot__mine {
-    background-color: var(--yellowMine);
-}
-
-/* styles for urban hero */
-
-.urban {display: flex;}
-
-.text__urban h1 {
-    font-size: var(--font-title-size);
-    color: var(--orangeUrban);
-    font-variant: small-caps;
-}
-
-.text__urban p {
-    font-size: var(--font-content-size);
-    color: var(--justWhite);
-    padding: 32px 80px;
-}
-
-.button__urban {
-    color: var(--orangeUrban);
-    border-color: var(--orangeUrban);
-}
-
-.dot__urban { 
-    background-color: var(--orangeUrban)
-}
-
-/* styles for aguas hero */
-
-.water {display: flex;}
-
-.text__water h1 {
-    font-size: var(--font-title-size);
-    color: var(--blueWater);
-    font-variant: small-caps;
-}
-
-.text__water p {
-    font-size: var(--font-content-size);
-    color: var(--justWhite);
-    padding: 32px 80px;
-}
-
-.button__water {
-    color: var(--blueWater);
-    border-color: var(--blueWater);
-}
-
-.dot__water {
-    background-color: var(--blueWater);
-}
-
-/* styles for crop hero */
-
-.crop {display: flex;}
-
-.text__crop h1 {
-    font-size: var(--font-title-size);
-    color: var(--greenCrop);
-    font-variant: small-caps;
-}
-
-.text__crop p {
-    font-size: var(--font-content-size);
-    color: var(--justWhite);
-    padding: 32px 80px;
-}
-
-.button__crop {
-    color: var(--greenCrop);
-    border-color: var(--greenCrop);
-}
-
-.dot__crop {
-    background-color: var(--greenCrop);
 }
 
 /* about us */

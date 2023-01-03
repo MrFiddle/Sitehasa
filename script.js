@@ -1,9 +1,9 @@
 const hero = document.querySelector('.hero');
 
-const minesHero = document.querySelector('.mines');
-const urbanHero = document.querySelector('.urban');
-const waterHero = document.querySelector('.water');
-const cropHero = document.querySelector('.crop');
+const minesHero = document.querySelector('.heroMine');
+const urbanHero = document.querySelector('.heroUrban');
+const waterHero = document.querySelector('.heroWater');
+const cropHero = document.querySelector('.heroCrop');
 
 const mineDot = document.querySelector('.dot__mine');
 const urbanDot = document.querySelector('.dot__urban');
@@ -12,6 +12,7 @@ const cropDot = document.querySelector('.dot__crop');
 
 const nav = document.querySelector('nav');
 const navIcon = document.querySelector('.navDotMenu')
+const navLogo = document.querySelector('.navLogo span');
 const mobileMenu = document.querySelector('.mobile__menu');
 
 var minesImg = new Image();
@@ -30,6 +31,7 @@ window.onscroll = () => {
     if (window.scrollY > heroHeight - (navHeight)) {
         nav.classList.add('nav__scrolled');
         navIcon.classList.add('nav__scrolledIcon');
+        navLogo.style.color = 'black';
 
         document.querySelectorAll('.menu__item a').forEach(a => {
             a.style.color = '#373981';
@@ -38,6 +40,7 @@ window.onscroll = () => {
     } else {
         nav.classList.remove('nav__scrolled');
         navIcon.classList.remove('nav__scrolledIcon');
+        navLogo.style.color = 'white';
 
         document.querySelectorAll('.menu__item a').forEach(a => {
             a.style.color = '#ffffff';
@@ -52,7 +55,7 @@ waterDot.addEventListener('click', toggleWaterHero);
 cropDot.addEventListener('click', toggleCropHero);
 navIcon.addEventListener('click', toggleNav);
 
-startup();
+// startup();
 
 function startup() {
     minesHero.style.display = 'flex';
