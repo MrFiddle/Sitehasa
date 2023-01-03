@@ -163,6 +163,7 @@ nav {
     ),
     url(https://www.regiopoliductos.com/wp-content/uploads/2019/09/back6.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero__title {

@@ -16,13 +16,13 @@ const navLogo = document.querySelector('.navLogo span');
 const mobileMenu = document.querySelector('.mobile__menu');
 
 var minesImg = new Image();
-minesImg.src = './assets/images/mines_hero.webp';
+minesImg.src = 'https://www.regiopoliductos.com/wp-content/uploads/2019/09/back6.jpg';
 var urbanImg = new Image();
-urbanImg.src = './assets/images/urban_hero.webp';
+urbanImg.src = 'https://assets3.thrillist.com/v1/image/1891766/1200x630/flatten;crop_down;webp=auto;jpeg_quality=70';
 var waterImg = new Image();
-waterImg.src = './assets/images/water_hero.webp';
+waterImg.src = 'https://www.seapal.gob.mx/wp-content/uploads/2021/11/COMUNICADO-155-Seapal-4.jpg';
 var cropImg = new Image();
-cropImg.src = './assets/images/crop_hero.webp';
+cropImg.src = 'https://grupolosencinos.com/wp-content/uploads/2021/04/venta-de-plasticos-agricolas-acolchados-para-invernaderos.jpg';
 
 heroHeight = hero.clientHeight;
 navHeight = nav.clientHeight;
@@ -58,12 +58,13 @@ navIcon.addEventListener('click', toggleNav);
 // startup();
 
 function startup() {
-    minesHero.style.display = 'flex';
+    hero.style.background = 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://www.regiopoliductos.com/wp-content/uploads/2019/09/back6.jpg)'
 }
 
 function toggleMineHero() {
     console.log("a")
-    hero.style.backgroundImage = 'url(./assets/images/mines_hero.webp)';
+
+    hero.style.background = 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://www.regiopoliductos.com/wp-content/uploads/2019/09/back6.jpg)'
 
     minesHero.style.display = 'flex';
     urbanHero.style.display = 'none';
@@ -78,7 +79,8 @@ function toggleMineHero() {
 }
 
 function toggleUrbanHero() {
-    hero.style.backgroundImage = 'url(./assets/images/urban_hero.webp)'
+
+    hero.style.background = 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://assets3.thrillist.com/v1/image/1891766/1200x630/flatten;crop_down;webp=auto;jpeg_quality=70)'
     console.log(hero.style.backgroundImage)
 
     minesHero.style.display = 'none';
@@ -93,7 +95,8 @@ function toggleUrbanHero() {
 }
 
 function toggleWaterHero() {
-    hero.style.backgroundImage = 'url(./assets/images/water_hero.webp)';
+
+    hero.style.background = 'linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://www.seapal.gob.mx/wp-content/uploads/2021/11/COMUNICADO-155-Seapal-4.jpg)'
 
     minesHero.style.display = 'none';
     urbanHero.style.display = 'none';
@@ -108,7 +111,8 @@ function toggleWaterHero() {
 }
 
 function toggleCropHero() {
-    hero.style.backgroundImage = 'url(./assets/images/crop_hero.webp)';
+    
+    hero.style.background = 'no-repeat linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://grupolosencinos.com/wp-content/uploads/2021/04/venta-de-plasticos-agricolas-acolchados-para-invernaderos.jpg)'
 
     minesHero.style.display = 'none';
     urbanHero.style.display = 'none';
