@@ -320,10 +320,15 @@ nav {
 }
 
 /* about us */
-.aboutUs {
+
+.aboutUs__mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.aboutUs__desktop {
+    display: none
 }
 
 .aboutUs__mainImage {
@@ -638,11 +643,18 @@ nav {
 /* proveedores */
 
 .proveedores {
+    background-color: #F1F2FF;
+}
+
+.proveedores__mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #F1F2FF;
+}
+
+.proveedores__desktop {
+    display: none;
 }
 
 .proveedores__mainImage {

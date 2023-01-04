@@ -34,7 +34,7 @@ heroHeight = hero.clientHeight;
 navHeight = nav.clientHeight;
 
 window.onscroll = () => {
-    if (window.scrollY > heroHeight - (navHeight)) {
+    if (window.scrollY >= heroHeight - (navHeight)) {
         nav.classList.add('nav__scrolled');
         navIcon.classList.add('nav__scrolledIcon');
         navLogo.style.color = 'black';
