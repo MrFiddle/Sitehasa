@@ -383,3 +383,56 @@ body {
 .projects__button {
     margin-bottom: 0;
 }
+
+/* locations-products */
+
+.locations {
+    display: none
+}
+
+.products {
+    display: none
+}
+
+.locations-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations-products__firstHalf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.locations-products__firstHalf .locations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.locations-products__secondHalf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.locations-products__secondHalf .products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}

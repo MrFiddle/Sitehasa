@@ -845,6 +845,10 @@ nav {
     cursor: pointer;
 }
 
+.locations-products {
+    display: none;
+}
+
 /* catálogos */
 
 .catalogos {
