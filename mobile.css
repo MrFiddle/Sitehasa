@@ -926,6 +926,10 @@ nav {
     cursor: pointer;
 }
 
+.catalogos-blog {
+    display: none;
+}
+
 /* footer */
 
 footer {
