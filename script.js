@@ -18,8 +18,8 @@ const mobileMenu = document.querySelector('.mobile__menu');
 // desktop nav components
 
 const categories__element = document.querySelectorAll('.categories__element');
-const logo__dark = document.querySelector('.logo__dark');
-const logo__light = document.querySelector('.logo__light');
+const logo__dark = document.querySelectorAll('.logo__dark');
+const logo__light = document.querySelectorAll('.logo__light');
 
 var minesImg = new Image();
 minesImg.src = 'https://www.regiopoliductos.com/wp-content/uploads/2019/09/back6.jpg';
@@ -37,7 +37,6 @@ window.onscroll = () => {
     if (window.scrollY >= heroHeight - (navHeight)) {
         nav.classList.add('nav__scrolled');
         navIcon.classList.add('nav__scrolledIcon');
-        navLogo.style.color = 'black';
 
         document.querySelectorAll('.menu__item a').forEach(a => {
             a.style.color = '#373981';
@@ -47,13 +46,20 @@ window.onscroll = () => {
             element.classList.add('categories__elementScrolled');
         })
 
-        logo__dark.style.display = 'none';
-        logo__light.style.display = 'block';
+        // logo__dark.style.display = 'none';
+        // logo__light.style.display = 'block';
+
+        logo__dark.forEach(element => {
+            element.style.display = 'none';
+        })
+
+        logo__light.forEach(element => {
+            element.style.display = 'block'
+        })
 
     } else {
         nav.classList.remove('nav__scrolled');
         navIcon.classList.remove('nav__scrolledIcon');
-        navLogo.style.color = 'white';
 
         document.querySelectorAll('.menu__item a').forEach(a => {
             a.style.color = '#ffffff';
@@ -63,8 +69,16 @@ window.onscroll = () => {
             element.classList.remove('categories__elementScrolled');
         })
 
-        logo__dark.style.display = 'block';
-        logo__light.style.display = 'none';
+        // logo__dark.style.display = 'block';
+        // logo__light.style.display = 'none';
+
+        logo__dark.forEach(element => {
+            element.style.display = 'block'
+        })
+
+        logo__light.forEach(element => {
+            element.style.display = 'none'
+        })
 
     }
 }

@@ -120,7 +120,7 @@ nav {
 }
 
 .nav__scrolledIcon span {
-    color: black;
+    color: var(--primary-color);
 }
 
 .mobile__scrolled {
@@ -137,10 +137,12 @@ nav {
     padding-left: 20px;
 }
 
-.navLogo span {
-    color: var(--justWhite);
-    font-size: 30px;
+.navLogo img {
+    width: 15%;
+    height: auto;
 }
+
+.logo__light {display: none;}
 
 .navScrolledLogo {
     color: black;
@@ -280,7 +282,7 @@ nav {
     padding-top: 10px;
     padding-right: 20px;
     padding-bottom: 10px;
-    color: white;
+    color: var(--justWhite);
 }
 
 /*  slideshow styles */
@@ -934,4 +936,103 @@ nav {
 
 footer {
     background-color: #101338;
+}
+
+.footer__desktop { display: none; }
+
+.footer__mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer__legal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    width: 80%;
+}
+
+.footer__legal a {
+    color: var(--justWhite);
+    font-weight: bold;
+    font-size: var(--font-content-size);
+    text-align: left;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.footer__logoSlogan{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+
+    width: 80%;
+}
+
+.footer__logoSlogan img {
+    width: 200px;
+    height: auto;
+}
+
+.footer__logoSlogan p {
+    padding-top: 15px;
+    font-size: var(--font-content-size);
+    color: var(--justWhite);
+    text-align: justify;
+}
+
+.footer__mercados {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.footer__mercados p {
+    font-size: var(--font-content-size);
+    color: var(--justWhite);
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.footer__mercados a {
+    font-size: var(--font-content-size);
+    color: var(--justWhite);
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.footer__sections {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.footer__sections p {
+    font-size: var(--font-content-size);
+    color: var(--justWhite);
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.footer__sections a {
+    font-size: var(--font-content-size);
+    color: var(--justWhite);
+    margin-top: 10px;
+    text-decoration: none;
 }
