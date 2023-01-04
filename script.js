@@ -15,6 +15,12 @@ const navIcon = document.querySelector('.navDotMenu')
 const navLogo = document.querySelector('.navLogo span');
 const mobileMenu = document.querySelector('.mobile__menu');
 
+// desktop nav components
+
+const categories__element = document.querySelectorAll('.categories__element');
+const logo__dark = document.querySelector('.logo__dark');
+const logo__light = document.querySelector('.logo__light');
+
 var minesImg = new Image();
 minesImg.src = 'https://www.regiopoliductos.com/wp-content/uploads/2019/09/back6.jpg';
 var urbanImg = new Image();
@@ -37,6 +43,13 @@ window.onscroll = () => {
             a.style.color = '#373981';
         })
 
+        categories__element.forEach(element => {
+            element.classList.add('categories__elementScrolled');
+        })
+
+        logo__dark.style.display = 'none';
+        logo__light.style.display = 'block';
+
     } else {
         nav.classList.remove('nav__scrolled');
         navIcon.classList.remove('nav__scrolledIcon');
@@ -45,6 +58,13 @@ window.onscroll = () => {
         document.querySelectorAll('.menu__item a').forEach(a => {
             a.style.color = '#ffffff';
         })
+
+        categories__element.forEach(element => {
+            element.classList.remove('categories__elementScrolled');
+        })
+
+        logo__dark.style.display = 'block';
+        logo__light.style.display = 'none';
 
     }
 }

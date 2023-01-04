@@ -76,12 +76,13 @@ body {
     padding-left: 40px;
 }
 
-.nav-desktop__logo span {
-    color: var(--a-hover-scolor);
+.nav-desktop__logo img {
+    height: 70%;
+    width: auto;
 }
 
-.nav-desktop__logo span:hover {
-    color: var(--a-hover-fcolor);
+.nav-desktop__logo .logo__light {
+    display: none;
 }
 
 .nav-desktop__categories {
@@ -93,24 +94,21 @@ body {
     padding: 0 20px;
 }
 
-.nav-desktop__categories a {
+.categories__element {
     text-decoration: none;
     color: var(--justWhite);
     font-size: var(--font-content-size);
     font-weight: 600;
     padding: 0 10px;
     overflow: hidden;
-    background: linear-gradient(to right, var(--a-hover-fcolor), var(--a-hover-fcolor) 50%, var(--a-hover-scolor) 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 100%;
-    transition: background-position 0.5s ease;
 }
 
-.nav-desktop__categories a:hover {
-    background-position: 0 100%;
+.categories__elementScrolled {
+    color: var(--primary-color);
+}
+
+.categories__element:hover {
+    color: var(--secondary-color);
 }
 
 /* heroes */
