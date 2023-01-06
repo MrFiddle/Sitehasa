@@ -529,6 +529,10 @@ footer {
     margin: 0;
 }
 
+.footer-desktop__firstHalf .footer__logoSlogan p {
+    width: 50%;
+}
+
 .footer-desktop__secondHalf {
     display: flex;
     flex-direction: row;
