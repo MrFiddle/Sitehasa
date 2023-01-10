@@ -1,3 +1,5 @@
+@import "../mobile.css";
+
 :root {
     --primary-color: #373981;
     --secondary-color: #0CA89E;
@@ -42,113 +44,29 @@ html {
     scroll-snap-type: y mandatory;
 }
 
-.scroller { 
-    overflow-y: scroll;
-    overflow-x: hidden;
-    height: 100vh;
-    width: 100vw;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-}
+/* nav */
 
-#inactive {
-    display: none;
-}
-
-.inactive { display: none; }
-
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
-nav {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    position: -webkit-sticky;
-    position: fixed;
-    justify-content: space-between;
-    background-color: rgb(255, 255, 255);
-    z-index: 100;
-    
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.nav__mobile {
-    display: flex;
-    justify-content: space-between;
-}
-
-.mobile__menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.menu__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu__item a {
-    font-size: var(--font-size-l);
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 0;
-    padding-left: 20px;
-    width: 100%;
-}
-
-.menu__item-font {
-    color: black;
-}
-
-.menu__item-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 20px;
-    min-width: 58px;
-}
-
-#edge {
-    padding-bottom: 57px;
-}
-
-.nav__scrolled {
-    background-color: rgba(255,255,255);
-}
-
-.nav__scrolledIcon span {
-    color: black;
-}
-
-.mobile__scrolled {
-    color: #171717;
-}
-
-/* logo and shit */
-
-.navLogo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
-
-.navDotMenu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 50%;
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-bottom: 10px;
+.categories__element {
     color: var(--primary-color);
 }
+
+.navLogo .logo__light {display: block;}
+.logo__dark {display: none}
+nav {background-color: var(--justWhite);}
+.navDotMenu {color: var(--primary-color);}
+.menu__item a {color:  var(--primary-color);}
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.navLogo {
+    display: block;
+}
+
+/* content */
 
 .main__fSlide {
     display: flex;

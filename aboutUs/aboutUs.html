@@ -42,7 +42,15 @@
 <body>
     <nav>
         <div class="nav__mobile">
-            <div class="navLogo"><a href="../home.html">home</a></div>
+            <a href="../home.html" class="home">
+                <div class="navLogo">
+                    <!-- <span>
+                        <i class="fa-solid fa-leaf"></i>
+                    </span> -->
+                    <img class="logo__dark" src="../assets/logos/sitehasa_dark.svg" alt="">
+                    <img class="logo__light" src="../assets/logos/sitehasa_light.svg" alt="">
+                </div>
+            </a>
             <div class="navDotMenu">
                 <span style="font-size: 3rem;">
                     <i class="fa-solid fa-bars"></i>
@@ -50,6 +58,14 @@
             </div>
         </div>
         <div class="mobile__menu slide-down" id="inactive">
+            <div class="menu__item">
+                <div class="menu__item-icon">
+                    <span style="color:var(--secondary-color); font-size: 30px;">
+                        <i class="fa-solid fa-people-group"></i>
+                    </span>
+                </div>
+                <a href="./aboutUs/aboutUs.html"><p>Mercados</p></a>
+            </div>
             <div class="menu__item">
                 <div class="menu__item-icon">
                     <span style="color:var(--secondary-color); font-size: 30px;">
@@ -104,6 +120,26 @@
                 <a id="edge_a" href="#locations"><p>Catálogos y fichas técnicas</p></a>
             </div>
 
+        </div>
+        <div class="nav__desktop">
+            <a href="../home.html" class="home">
+                <div class="navLogo">
+                    <!-- <span style="font-size: 30px;">
+                        <i class="fa-solid fa-leaf"></i>
+                    </span> -->
+                    <img class="logo__dark" src="../assets/logos/sitehasa_dark.svg" alt="">
+                    <img class="logo__light" src="../assets/logos/sitehasa_light.svg" alt="">
+                </div>
+            </a>
+            <div class="nav-desktop__categories">
+                    <a href="./aboutUs/aboutUs.html" class="categories__element">Mercados</a>
+                    <a href="./aboutUs/aboutUs.html" class="categories__element">¿Quienes somos?</a>
+                    <a href="#" class="categories__element">Mejores trabajos</a>
+                    <a href="#" class="categories__element">Contacto / Sucursales</a>
+                    <a href="#" class="categories__element">Productos</a>
+                    <a href="#" class="categories__element">Blog de noticias</a>
+                    <a id="edge_a" href="#locations" class="categories__element">Catálogos y fichas técnicas</a>
+            </div>
         </div>
     </nav>
 
