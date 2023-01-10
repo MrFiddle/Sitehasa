@@ -1,0 +1,52 @@
+@import "../aboutUs/mobile.css";
+
+:root {
+    --primary-color: #373981;
+    --secondary-color: #0CA89E;
+    --tertiary-color: #085C57;
+
+    --yellowMine: #FBFFD0;
+    --orangeUrban: #FFC9B0;
+    --blueWater: #B0E0FF;
+    --greenCrop: #B0FFC9;
+    --justWhite: #FFFFFF;
+
+    /* fonts size */
+
+    --font-size-xxs: 1.2rem;
+    --font-size-xs: 1.4rem;
+    --font-size-s: 1.6rem;
+    --font-size-m: 1.8rem;
+    --font-size-l: 2rem;
+    --font-size-xl: 2.2rem;
+    --font-size-xxl: 2.4rem;
+
+    --font-title-size: 3.2rem;
+    --font-subtitle-size: 2.4rem;
+    --font-content-size: 1.6rem;
+
+    /* random */
+
+    --edge-components-margin: 90px
+}
+
+* {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+}
+    
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+#inactive {
+    display: none;
+}
+
+.inactive { display: none; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
