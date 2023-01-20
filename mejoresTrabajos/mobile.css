@@ -50,3 +50,53 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+/* content */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--justWhite);
+}
+
+.main__firstHalf {
+    height: 20vh;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    height: auto;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(http://sitehasa.solemti.net/files/Nosotros/1/Galeria/equipo-sitehasa-723.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.banner span {
+    font-size: 70px;
+    color: var(--secondary-color);
+}
+
+.banner h1 {
+    font-size: 3.6rem;
+    text-align: center;
+    color: var(--justWhite);
+    font-variant: small-caps;
+}
+
+.banner p {
+    font-size: 1.4rem;
+    text-align: justify;
+    margin: 25px;
+    color: var(--justWhite);
+}

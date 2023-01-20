@@ -59,11 +59,11 @@ nav {background-color: var(--justWhite);}
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 40px;
 }
 
 .navLogo {
     display: block;
+    width: 100%;
 }
 
 /* content */
